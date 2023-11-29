@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aula Fitness</title>
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#inicio"><img src="assets/logo-final.png" alt="" /></a>
+        </div>
+
+        <nav id="nav">
+          <a href="#inicio" onclick="seleccionar()"
+            ><i class="fa-solid fa-house"></i> Inicio</a
+          >
+          <a href="#nosotros" onclick="seleccionar()"
+            ><i class="fa-solid fa-graduation-cap"></i> Cursos</a
+          >
+          <a href="#servicios" onclick="seleccionar()"
+            ><i class="fa-solid fa-newspaper"></i> Artículos</a
+          >
+          <a href="#contacto" onclick="seleccionar()"
+            ><i class="fa-solid fa-dumbbell"></i> Entrenamientos</a
+          >
+          <a href="#contacto" onclick="seleccionar()"
+            ><i class="fa-solid fa-user-group"></i> Nosotros</a
+          >
+        </nav>
+
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <div
+          class="nav-responsive"
+          id="icono-nav"
+          onclick="mostrarOcultarMenu()"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-seccion">
+        <div class="info">
+          <h2>Aula Fitness</h2>
+          <p>Entrenar es más fácil de lo que piensas!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+      <div class="fila">
+        <div class="col">
+          <img src="assets/portadanosotros.png" alt="" />
+        </div>
+        <div class="col">
+          <div class="contenedor-titulo">
+            <div class="info">
+              <h2>NOSOTROS</h2>
+            </div>
+          </div>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni iste
+            earum perferendis voluptatibus fuga? Perferendis quod architecto
+            error, corrupti nisi inventore consequuntur vitae quos pariatur,
+            debitis nostrum eos voluptas ratione aliquid maxime quae. Enim unde
+            maxime ex nesciunt. Exercitationem reprehenderit tenetur ducimus
+            accusantium labore eum consequatur vero modi atque cum. Repudiandae
+            neque omnis quia esse fugiat magni.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+          <div class="info">
+            <h2>CONTACTO</h2>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="col">
+            <input type="text" placeholder="Nombre" />
+          </div>
+
+          <div class="col">
+            <input type="text" placeholder="Correo electrónico" />
+          </div>
+        </div>
+
+        <div class="mensaje">
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Escribir mensaje"
+          ></textarea>
+          <button>Enviar Mensaje</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2023 - Aula Fitness | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>
